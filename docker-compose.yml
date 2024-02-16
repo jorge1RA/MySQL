@@ -9,7 +9,7 @@ services:
     networks:
       - my_network
     environment:
-      MYSQL_ROOT_PASSWORD: jorgecontrasena
+      MYSQL_ROOT_PASSWORD: root
 
   phpmyadmin:
     image: phpmyadmin
@@ -22,7 +22,7 @@ services:
       - my_network
     environment:
       PMA_HOST: mysql
-      MYSQL_ROOT_PASSWORD: jorgecontrasena
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: jorge
       MYSQL_PASSWORD: jorgecontrasena
 
@@ -31,6 +31,5 @@ networks:
 
 volumes:
   mysql_data:
-
 
 
