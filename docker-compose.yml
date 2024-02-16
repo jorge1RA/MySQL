@@ -10,7 +10,7 @@ services:
       - my-network
     environment:
       MONGO_INITDB_ROOT_USERNAME: jorge
-      MONGO_INITDB_ROOT_PASSWORD: jorge
+      MONGO_INITDB_ROOT_PASSWORD: jorgecontrasena
 
   mongo-express:
     image: mongo-express
@@ -23,9 +23,9 @@ services:
       - my-network
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: jorge
-      ME_CONFIG_MONGODB_ADMINPASSWORD: jorge
+      ME_CONFIG_MONGODB_ADMINPASSWORD: jorgecontrasena
       ME_CONFIG_BASICAUTH_USERNAME: jorge
-      ME_CONFIG_BASICAUTH_PASSWORD: jorge
+      ME_CONFIG_BASICAUTH_PASSWORD: jorgecontrasena
       ME_CONFIG_MONGODB_SERVER: mongodb
 
 networks:
@@ -33,6 +33,7 @@ networks:
 
 volumes:
   mongo-data:
+
 
 
 
