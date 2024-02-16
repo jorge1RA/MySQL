@@ -1,4 +1,4 @@
-version: '3'
+version: '3' # JRA
 
 services:
   mysql:
@@ -9,7 +9,7 @@ services:
     networks:
       - my_network
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: jorgecontrasena   
 
   phpmyadmin:
     image: phpmyadmin
@@ -22,14 +22,15 @@ services:
       - my_network
     environment:
       PMA_HOST: mysql
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: jorge
-      MYSQL_PASSWORD: jorgecontrasena
+      MYSQL_ROOT_PASSWORD: jorgecontrasena   
+      MYSQL_USER: root                        
+      MYSQL_PASSWORD: jorgecontrasena         
 
 networks:
   my_network:
 
 volumes:
   mysql_data:
+
 
 

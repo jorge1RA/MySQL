@@ -1,4 +1,4 @@
-# Utilizamos la imagen oficial de MySQL como base
+# Utilizamos la imagen oficial de MySQL como base | JRA
 FROM mysql
 
 # Definimos la contraseña de root para MySQL (cambia "my-secret-pw" por tu contraseña deseada)
